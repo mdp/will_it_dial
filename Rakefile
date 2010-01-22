@@ -5,13 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "will_it_dial"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{A paranoid validator for phone numbers}
+    gem.description = %Q{Used to validate phone numbers that customers enter. 
+                        It will detect numbers that while technically valid, seem suspicious}
     gem.email = "mark@mpercival.com"
     gem.homepage = "http://github.com/markpercival/will_it_dial"
     gem.authors = ["Mark Percival"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.add_development_dependency "rspec", ">= 0"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
