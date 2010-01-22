@@ -15,6 +15,9 @@ Defaults to US
 
     WillItDial('404-332-1494') => true
 
+## Installation
+
+    gem install will_it_dial
 
 ## Todo
 
