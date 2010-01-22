@@ -54,7 +54,8 @@ module WillItDial
     end
 
     def fake_exchange_code?
-      (number[3,1].to_i == 1) || (number[3,1].to_i == 0)
+      # Per wikipedia, no x11 or 0xx 1xx exchange codes
+      (number[3,1].to_i == 1) || (number[3,1].to_i == 0) || (number[4,2].to_i == 11)
     end
 
     def fake_area_code?

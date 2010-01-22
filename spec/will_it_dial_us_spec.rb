@@ -19,6 +19,7 @@ describe "A paranoid phone validator" do
   it "should return false for invalid numbers" do
     WillItDial::US.check('404-154-7372').should be_false # Can't start exchange code with 1
     WillItDial::US.check('404-054-7372').should be_false # Can't start exchange code with 0
+    WillItDial::US.check('404-311-7372').should be_false # Can't have x11 exchange codes
   end
   
   it "should return false for banned numbers" do

@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{will_it_dial}
-  s.version = "1.0.0"
+  s.version = "1.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mark Percival"]
@@ -21,8 +21,12 @@ Gem::Specification.new do |s|
     ".document",
      ".gitignore",
      "LICENSE",
+     "README.markdown",
      "Rakefile",
-     "lib/will_it_dial.rb"
+     "VERSION",
+     "lib/will_it_dial.rb",
+     "spec/will_it_dial_us_spec.rb",
+     "will_it_dial.gemspec"
   ]
   s.homepage = %q{http://github.com/markpercival/will_it_dial}
   s.rdoc_options = ["--charset=UTF-8"]
